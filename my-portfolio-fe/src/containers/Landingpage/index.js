@@ -20,7 +20,6 @@ export function Landingpage() {
 
     }, []);
 
-
     // render component
     return (
         <Section id="landing_page">

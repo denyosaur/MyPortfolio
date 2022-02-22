@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Landingpage from "../Landingpage/loadable";
 import NotFoundPage from "../NotFoundPage/loadable";
 
 //styled components css
 import GlobalStyle from "../../global-styles";
-import Container from '../../components/Container';
-import Section from '../../components/Section';
+import Header from "../Header";
+import Container from "../../components/Container";
 
 /**
  * App.js
@@ -18,14 +18,13 @@ import Section from '../../components/Section';
 function App() {
     return (
         <>
-            <BrowserRouter>
-                <Section >
-                    <Routes>
-                        <Route path="/" element={<Landingpage />} />
-                        <Route element={<NotFoundPage />} />
-                    </Routes>
-                </Section>
-            </BrowserRouter>
+            <Header/>
+            <Container id="content">
+                <Routes>
+                    <Route path="/" element={<Landingpage />} />
+                    <Route element={<NotFoundPage />} />
+                </Routes>
+            </Container>
             <GlobalStyle />
         </>
     );

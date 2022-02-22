@@ -4,7 +4,7 @@
 
 import React from "react";
 import loadable from "../../utils/loadable";
-import LoadingCircle from "../../components/LoadingCircle";
+import LoadingCircle from "../../components/LoadingSpinner";
 
 export default loadable(() => import('./index'), {
     fallback: <LoadingCircle />,
