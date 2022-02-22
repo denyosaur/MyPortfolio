@@ -11,14 +11,16 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
     width: 100%;
+    background-color: #293241;
+    color:#FFFFFF;
   }
 
   body.fontLoaded {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  #app {
-    background-color: #fafafa;
+  #root {
+    background-color: #293241;
     min-height: 100%;
     min-width: 100%;
   }
