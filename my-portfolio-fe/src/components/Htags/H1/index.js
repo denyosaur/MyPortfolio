@@ -11,7 +11,7 @@ const H1 = styled.h1`
   to {
     padding-top: 0;
     opacity: 1;
-    ine-height: 25px;
+    line-height: 25px;
   }
 `;
 

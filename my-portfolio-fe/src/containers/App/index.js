@@ -7,7 +7,7 @@ import NotFoundPage from "../NotFoundPage/loadable";
 //styled components css
 import GlobalStyle from "../../global-styles";
 import Header from "../Header";
-import ContainerWrapper from "../../components/ContainerWrapper";
+import ContainerWrapperDiv from "../../components/ContainerWrapperDiv";
 
 /**
  * App.js
@@ -19,12 +19,12 @@ function App() {
     return (
         <>
             <Header />
-            <ContainerWrapper id="container_wrapper">
+            <ContainerWrapperDiv id="container_wrapper">
                 <Routes>
                     <Route path="/" element={<Content />} />
                     <Route element={<NotFoundPage />} />
                 </Routes>
-            </ContainerWrapper>
+            </ContainerWrapperDiv>
             <GlobalStyle />
         </>
     );

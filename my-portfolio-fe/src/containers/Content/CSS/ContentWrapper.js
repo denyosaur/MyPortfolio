@@ -1,12 +1,31 @@
 import styled from 'styled-components';
 
-// styled-componet for creating section container
 const ContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width:100%;
-  height:100%;
+
+    padding-left:15px;
+    padding-right:15px;
+    margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    width:100%;
+    min-height:calc(100vh - 8rem);
+
+
+    @media (min-width: 768px) {
+        {
+            width: 750px;
+        }
+    }
+    @media (min-width: 992px) {
+        {
+            width: 970px;
+        }
+    }
+    @media (min-width: 1200px) {
+        {
+            width: 1170px;
+        }
+    }
 `;
 
 export default ContentWrapper;

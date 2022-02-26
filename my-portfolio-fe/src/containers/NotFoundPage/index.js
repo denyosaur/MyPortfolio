@@ -7,7 +7,7 @@
 import React from "react";
 
 import Section from "../../components/Section";
-import H2 from "../../components/H2";
+import H2 from "../../components/Htags/H2";
 
 
 function NotFound() {

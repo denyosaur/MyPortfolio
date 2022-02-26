@@ -9,9 +9,7 @@
 import React, { useEffect } from 'react';
 
 //styled components
-import H1 from '../../components/H1';
-import H2 from '../../components/H2';
-import H3 from '../../components/H3';
+
 import Section from '../../components/Section';
 import Paragraph from '../../components/Paragraph';
 

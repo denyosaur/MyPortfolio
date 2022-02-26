@@ -11,7 +11,7 @@ import React, { useEffect } from "react";
 import HeaderSection from "../../components/Header/HeaderSection";
 import Navbar from "../../components/Header/Navbar";
 import HeaderLinks from "../../components/Header/HeaderLinks";
-import Container from "../../components/ContainerWrapper";
+import ContainerWrapperDiv from "../../components/ContainerWrapperDiv";
 
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
     // render component
     return (
         <HeaderSection>
-            <Container id="navbar">
+            <ContainerWrapperDiv id="navbar-container">
                 <Navbar>
                     <HeaderLinks smooth to="/#landing_page">
                         home
@@ -37,7 +37,7 @@ const Header = () => {
                         contact
                     </HeaderLinks>
                 </Navbar>
-            </Container>
+            </ContainerWrapperDiv>
         </HeaderSection>
     );
 }

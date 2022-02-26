@@ -22,12 +22,12 @@ export function Content() {
 
     // render component
     return (
-        <ContentWrapper id="content">
+        <>
             <LandingPage />
             <Projects />
             <About />
 
-        </ContentWrapper>
+        </>
     );
 }
 
