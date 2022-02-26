@@ -9,31 +9,22 @@
 import React, { useEffect } from 'react';
 
 //styled components
-import H1 from '../../components/Htags/H1';
-import H2 from '../../components/Htags/H2';
-import H3 from '../../components/Htags/H3';
+import H1 from '../../components/H1';
+import H2 from '../../components/H2';
+import H3 from '../../components/H3';
 import Section from '../../components/Section';
 import Paragraph from '../../components/Paragraph';
 
-export function Landingpage() {
+export function Projects() {
     useEffect(() => {
 
     }, []);
 
     // render component
     return (
-        <Section id="landing_page">
-            <H3>
-                Hi! My name is
-            </H3>
-            <H1>
-                Daniel Hae-Sung Kim.
-            </H1>
-            <H2>
-                I'm a full stack web developer.
-            </H2>
+        <Section id="projects">
             <Paragraph>
-                qwery
+                projects here
             </Paragraph>
         </Section>
     );
@@ -41,6 +32,6 @@ export function Landingpage() {
 
 
 //* All compose does is let you write deeply nested function transformations without the rightward drift of the code. Don’t give it too much credit!
-export default Landingpage;
+export default Projects;
 
 /* eslint-disable */

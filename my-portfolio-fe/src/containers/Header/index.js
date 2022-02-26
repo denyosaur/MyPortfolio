@@ -7,12 +7,11 @@
  */
 
 import React, { useEffect } from "react";
-
 //styled components
 import HeaderSection from "../../components/Header/HeaderSection";
 import Navbar from "../../components/Header/Navbar";
 import HeaderLinks from "../../components/Header/HeaderLinks";
-import Container from "../../components/Container";
+import Container from "../../components/ContainerWrapper";
 
 
 const Header = () => {
@@ -25,16 +24,16 @@ const Header = () => {
         <HeaderSection>
             <Container id="navbar">
                 <Navbar>
-                    <HeaderLinks to="#landing_page">
+                    <HeaderLinks smooth to="/#landing_page">
                         home
                     </HeaderLinks>
-                    <HeaderLinks to="#about">
+                    <HeaderLinks smooth to="/#about">
                         about
                     </HeaderLinks>
-                    <HeaderLinks to="#projects">
+                    <HeaderLinks smooth to="#projects">
                         projects
                     </HeaderLinks>
-                    <HeaderLinks to="#contact">
+                    <HeaderLinks smooth to="/#contact">
                         contact
                     </HeaderLinks>
                 </Navbar>

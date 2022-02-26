@@ -1,18 +1,12 @@
 import styled from 'styled-components';
 
 // styled-componet for creating section container
-const Section = styled.section`
+const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width:100%;
-  height:100vh;
-  padding-top:67px;
+  height:100%;
 `;
 
-export default Section;
-
-
-// (props => ({
-//     className: props.className,
-// }))
+export default ContentWrapper;

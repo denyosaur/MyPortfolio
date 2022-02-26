@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
-export default styled(Link)`
+export default styled(HashLink)`
     display: inline-flex;
     padding: 0.25em 2em;
     margin: 1em;
@@ -14,8 +15,8 @@ export default styled(Link)`
     font-size: 1.3rem;
     color: #E0FBFC;
     transition:0.2s;
-    ${props =>props.active &&
-    `
+    ${props => props.active &&
+        `
     background: blue;
     color:white;
     `}
