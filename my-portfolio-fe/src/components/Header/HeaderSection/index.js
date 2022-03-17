@@ -12,6 +12,7 @@ const Header = styled.header`
     top:0;
     background-color:#293241;
     color:#E0FBFC;
+    z-index:3;
 `
 
 export default Header;

@@ -9,7 +9,6 @@
 import React, { useEffect } from 'react';
 
 //styled components
-import ContentWrapper from './CSS/ContentWrapper';
 import LandingPage from '../LandingPage/loadable';
 import Projects from '../Projects/loadable';
 import About from '../About/loadable';

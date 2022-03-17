@@ -14,6 +14,7 @@ import H2 from '../../components/Htags/H2';
 import H3 from '../../components/Htags/H3';
 import Section from '../../components/Section';
 import Paragraph from '../../components/Paragraph';
+import TextWrapper from './CSS/TextWrapper';
 
 export function Landingpage() {
     useEffect(() => {
@@ -23,18 +24,26 @@ export function Landingpage() {
     // render component
     return (
         <Section id="landing_page">
-            <H3>
-                Hi! My name is
-            </H3>
-            <H1>
-                Daniel Hae-Sung Kim.
-            </H1>
-            <H2>
-                I'm a full stack web developer.
-            </H2>
-            <Paragraph>
-                qwery
-            </Paragraph>
+            <TextWrapper timing=".5">
+                <H3>
+                    Hi! My name is
+                </H3>
+            </TextWrapper>
+            <TextWrapper timing=".5">
+                <H1>
+                    Daniel Hae-Sung Kim.
+                </H1>
+            </TextWrapper>
+            <TextWrapper timing=".5">
+                <H2>
+                    I'm a full stack web developer.
+                </H2>
+            </TextWrapper>
+            <TextWrapper timing=".5">
+                <Paragraph>
+                    qwery
+                </Paragraph>
+            </TextWrapper>
         </Section>
     );
 }
