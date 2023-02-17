@@ -1,0 +1,39 @@
+{
+  "name": "my-portfolio-be",
+  "version": "1.0.0",
+  "description": "My Portfolio page - Backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node server.js",
+    "create-db": "psql -U postgres < ./sql/myportfolio.sql",
+    "create-db2": "psql -f ./sql/myportfolio.sql",
+    "db:build": "node ./sql/db-seed.js",
+    "seed": "npm run create-db && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denyosaur/my-portfolio-be.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Daniel K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denyosaur/my-portfolio-be/issues"
+  },
+  "homepage": "https://github.com/denyosaur/my-portfolio-be#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^13.0.1",
+    "express": "^4.17.2",
+    "jsonschema": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  }
+}

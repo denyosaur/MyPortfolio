@@ -1,0 +1,43 @@
+{
+    "title": "New Project",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "projectName": {
+            "description": "project name",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "projectUrl": {
+            "description": "project URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "githubUrl": {
+            "description": "github url",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "projectImageUrl": {
+            "description": "project image URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "projectDescriptions": {
+            "description": "project description",
+            "type": "string"
+        },
+        "tools": {
+            "description": "frameworks and libraries used",
+            "type": "array"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "projectName"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "New Info",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "info": {
+      "description": "info text",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250
+    },
+    "skills": {
+      "description": "skills array",
+      "type": "array"
+    },
+    "about": {
+      "description": "about text",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "info",
+    "skills",
+    "about"
+  ]
+}

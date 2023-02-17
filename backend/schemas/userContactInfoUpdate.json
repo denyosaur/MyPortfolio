@@ -1,0 +1,39 @@
+{
+    "title": "User Contact Info",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "linkedin_url": {
+            "description": "linkedin URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "github_profile_url": {
+            "description": "github URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "email": {
+            "description": "email",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30,
+            "format": "email"
+        },
+        "facebook_url": {
+            "description": "facebook URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "instagram_url": {
+            "description": "instagram URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+        }
+    },
+    "additionalProperties": false
+}
