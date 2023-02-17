@@ -4,6 +4,7 @@
 =====================================
 
 Portfolio site that showcases my skills and information about myself.
+
 https://dhkportfolio.dev/
 
 **Purpose**
@@ -25,12 +26,12 @@ This project also includes libraries that I have picked up through the years, in
 1. Ensure Node v18.14.0 is installed
 2. Clone this repo using `git clone https://github.com/denyosaur/MyPortfolio.git`
 3. In the cloned repo folder move to backend folder: `cd backend`
-  1. install dependencies with `npm install`
-  2. run `npm ruun db:build` to seed the Postgresql server
-  3. run `npm run start` to start the server
+    1. install dependencies with `npm install`
+    2. run `npm ruun db:build` to seed the Postgresql server
+    3. run `npm run start` to start the server
 3. In the cloned repo folder move to frontend folder: `cd frontend`
-  1. install dependencies with `npm install`
-  2. run `npm start`
+    1. install dependencies with `npm install`
+    2. run `npm start`
             
 **Tech Stack**
 ---------------
