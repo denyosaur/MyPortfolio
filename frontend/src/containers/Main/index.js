@@ -39,13 +39,11 @@ const Main = ({
       setTimeout(() => {
         dispatchFetchInfo();
       }, 5000);
-    } else {
-      setTimeout(() => {
-        setFadeOutLanding(true);
-      }, 2000);
+    } else if (infoRequestStatus === 'success') {
+      setFadeOutLanding(true)
       setTimeout(() => {
         setLoadSuccess(true);
-      }, 4800);
+      }, 2000);
     }
   }, [
     dispatchFetchInfo,
