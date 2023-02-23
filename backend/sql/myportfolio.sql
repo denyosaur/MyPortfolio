@@ -53,15 +53,15 @@ VALUES (
 INSERT INTO projects (project_name, project_url, github_url, project_image_url, project_descriptions, tools)
 VALUES (
     'Pokecollector',
-    'https://pokecollector.herokuapp.com/',
-    'https://github.com/denyosaur/pokecolletor_frontend',
+    'https://pokecollector-frontend.onrender.com/',
+    'https://github.com/denyosaur/Pokecollector',
     'https://i.imgur.com/LcPpb6H.jpg',
     'Pokecollector is to practice and present my skills for both front-end and back-end. eCommerce sites are very common around the web, so I wanted to make an attempt at building one out from scratch. Although the site does not accept or use any form of real currency (the user can add as much money as they want), the site attempts to mimic the exact userflow from real ecommerce sites.',
     '{React, Express, Node, HTML, CSS}'
     ),
     (
     'Rocketnews',
-    'https://rocketnews.herokuapp.com/login',
+    'https://rocketnews.onrender.com/login',
     'https://github.com/denyosaur/RocketNews',
     'https://i.imgur.com/xftUtpd.png',
     'Rocketnews was a practice in the implementation a full-stack web application that utilized both external and internal APIs. The front-end was designed with mobile first in mind, to create the most user friendly experience on mobile devices. Larger screen sizes were then developed in addition to the mobile first design. The back-end was created using RESTful routing conventions. Both internal and external API routing is handled by the back end.',
@@ -69,9 +69,9 @@ VALUES (
     ),
     (
     'MyPortfolio',
-    'https://google.com',
-    'https://github.com/denyosaur/my-portfolio-fe',
-    'https://i.imgur.com/xftUtpd.png',
+    'https://dhkportfolio.dev/',
+    'https://github.com/denyosaur/MyPortfolio',
+    'https://i.imgur.com/m9TMw0n.png',
     'My Portfolio Site.',
     '{React, Redux, Reselect, Styled-Components, Express, Node}'
     );
