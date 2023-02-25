@@ -10,8 +10,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100vh;
-    width: 100vw;
   }
 
   body.fontLoaded {

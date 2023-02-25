@@ -8,6 +8,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     font-size: ${({ theme: { fontSizes: { p4 } } }) => p4};
+    height: 100%;
   }
 `;
 
