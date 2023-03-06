@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: 768px) {
+      height: 100%;
+    }
   }
 
   body.fontLoaded {
@@ -20,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
     background-color: #fafafa;
     min-height: 100%;
     min-width: 100%;
+  }
+
+  #root {
+    @media (max-width: 768px) {
+      height: 100%;
+    }
   }
 
   .label {

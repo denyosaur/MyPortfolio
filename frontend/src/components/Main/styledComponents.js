@@ -11,6 +11,7 @@ export const MainViewContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    height: calc(100% - max(40px, 8vmin));
   }
 `;
 
@@ -21,6 +22,7 @@ export const MainContainer = styled.main`
   z-index: 2;
 
   @media (max-width: 768px) {
+    margin-top: 16rem;
     height: 100%;
     width: auto;
   }
