@@ -30,7 +30,7 @@ export const ProjectCardContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 6.5rem;
+    height: 5.5rem;
     margin: 1rem 0rem 0rem 0;
     width: 15rem;
   }
@@ -54,7 +54,7 @@ export const StyledProjectLink = styled(Link)`
   width: max-content;
 
   @media (max-width: 768px) {
-    font-size: ${({ theme: { fontSizes: { h3 } } }) => h3};
+    font-size: ${({ theme: { fontSizes: { h4 } } }) => h4};
   }
 `;
 

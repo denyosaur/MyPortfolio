@@ -45,7 +45,6 @@ export const StyledBorderlessButton = styled(BorderlessButton)`
   }
 
   .label {
-    
     @media (max-width: 768px) {
       font-size: ${({ theme: { fontSizes: { p4 } } }) => p4};
     }

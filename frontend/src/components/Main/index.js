@@ -13,7 +13,6 @@ import {
 const MainView = ({
   dispatchChangePageView,
   pageView,
-
 }) => {
   const ViewToRender = viewDictionary[pageView];
 

@@ -21,8 +21,10 @@ export const NavbarContainer = styled.header`
   z-index: 2;
 
   @media (max-width: 768px) {
-    height: 50%;
     flex-direction: column;
+    height: 16rem;
+    width: 22rem;
+    position: fixed;
   }
 `;
 
