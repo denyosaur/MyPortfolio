@@ -13,9 +13,12 @@ const VideoBackground = () => (
       controls={false}
       loop
       muted
-      src={backgroundVideo}
-      type="video/mp4"
-    />
+    >
+      <source
+        src={backgroundVideo}
+        type="video/mp4"
+      />
+    </StyledVideo>
   </BackgroundContainer >
 )
 

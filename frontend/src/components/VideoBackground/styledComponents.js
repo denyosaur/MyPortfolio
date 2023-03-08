@@ -12,9 +12,8 @@ export const BackgroundContainer = styled.div`
 `;
 
 export const StyledVideo = styled.video`
-  filter: blur(0.7rem) brightness(65%) grayscale(85%);
   height: 100%;
   object-fit: fill;
   opacity: 20%;
   width: 100%;
-`
+`;
