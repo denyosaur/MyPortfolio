@@ -14,6 +14,5 @@ export const BackgroundContainer = styled.div`
 export const StyledVideo = styled.video`
   height: 100%;
   object-fit: fill;
-  opacity: 20%;
   width: 100%;
 `;

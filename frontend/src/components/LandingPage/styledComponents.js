@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { H1 } from '../base_comps';
 
@@ -20,12 +20,12 @@ export const StyledH1 = styled(H1)`
 export const TextContainer = styled.div`
   align-items: flex-end;
   animation: ${({
-    fadeOutLanding,
-    theme: { fade },
-  }) => fadeOutLanding ? css`${fade.out} 2s linear` : 'none'};
+  fadeOutLanding,
+  theme: { fade },
+}) => fadeOutLanding ? css`${fade.out} 1s linear` : 'none'};
   display: flex;
   flex-direction: row;
   height: 5rem;
   transition: visibility 2s linear;
-  visibility: ${({fadeOutLanding}) => fadeOutLanding ? 'hidden' : 'visible'};
+  visibility: ${({ fadeOutLanding }) => fadeOutLanding ? 'hidden' : 'visible'};
 `;

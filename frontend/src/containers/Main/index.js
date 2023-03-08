@@ -17,7 +17,6 @@ import MainView from '../../components/Main';
 import { Container } from './styledComponents';
 
 const Main = ({
-  dispatchChangeColorView,
   dispatchChangePageView,
   dispatchFetchInfo,
   infoRequestStatus,
@@ -38,12 +37,12 @@ const Main = ({
     } else if (infoRequestStatus === 'failed') {
       setTimeout(() => {
         dispatchFetchInfo();
-      }, 5000);
+      }, 4000);
     } else if (infoRequestStatus === 'success') {
       setFadeOutLanding(true)
       setTimeout(() => {
         setLoadSuccess(true);
-      }, 2000);
+      }, 1000);
     }
   }, [
     dispatchFetchInfo,
