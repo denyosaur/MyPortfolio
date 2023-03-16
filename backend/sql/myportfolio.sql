@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS info (
     id SERIAL PRIMARY KEY,
     info VARCHAR(250),
     skills text[],
-    about VARCHAR(600)
+    about VARCHAR(600),
+    resumeLink VARCHAR(120)
 );
 
 CREATE TABLE IF NOT EXISTS projects (
@@ -43,11 +44,12 @@ VALUES (
     'https://www.instagram.com/donniekim/'
     );
 
-INSERT INTO info (info, skills, about)
+INSERT INTO info (info, skills, about, resumeLink)
 VALUES (
     'Always the curious creator, I enjoy taking things apart and understanding the inner workings of computers and websites. As a web developer, I strive grow and learn all things web developement.',
     '{Javascript, React, React Native, Redux, Redux-Saga, Reselect, Styled-Components, Material-UI, HTML, CSS, Node.js, Express}',
-    E'Web developer with an ever expanding skill set which includes Javascript, HTML, CSS, and SQL.\n\nAs a digital programmatic advertiser, I approach novel problems with an analytical and solution-oriented mindset. Additionally, my curious nature is a major driver in my approach to problem solving - I strive to fully comprehend the problem and its solutions.\n\nWorking in online advertising seeded my interest in programming and the inner workings of websites. After 5 years of working in online advertising, I''ve finally set off on my journey to becoming a web developer.'
+    E'Web developer with an ever expanding skill set which includes Javascript, HTML, CSS, and SQL.\n\nAs a digital programmatic advertiser, I approach novel problems with an analytical and solution-oriented mindset. Additionally, my curious nature is a major driver in my approach to problem solving - I strive to fully comprehend the problem and its solutions.\n\nWorking in online advertising seeded my interest in programming and the inner workings of websites. After 5 years of working in online advertising, I''ve finally set off on my journey to becoming a web developer.',
+    'https://drive.google.com/file/d/1VBqnegPHG7DmK0Pi4ttgHmZQxpSSFCbI/view?usp=sharing'
     );
 
 INSERT INTO projects (project_name, project_url, github_url, project_image_url, project_descriptions, tools)

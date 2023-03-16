@@ -5,11 +5,12 @@ const db = require("../db");
 const HelperFunctions = require("../helper/helpers");
 
 class Info {
-  constructor(id, info, skills, about) {
+  constructor(id, info, skills, about, resumeLink) {
     this.id = id;
-    this.info = info;
-    this.skills = skills;
     this.about = about;
+    this.info = info;
+    this.resumeLink = resumeLink;
+    this.skills = skills;
   }
 
   static async getInfo(id) {
@@ -17,7 +18,8 @@ class Info {
       const res = await db.query(`SELECT  id,
                                           info,
                                           skills,
-                                          about
+                                          about,
+                                          resumeLink
                                   FROM info
                                   WHERE id = $1`, [id]);
       const {
@@ -30,7 +32,8 @@ class Info {
         id,
         info,
         skills,
-        about
+        about,
+        resumeLink
       );
     } catch (err) {
       console.log(err);
@@ -45,6 +48,7 @@ class Info {
           info: "info",
           skills: "skills",
           about: "about",
+          resumeLink: "resumeLink",
         }
       );
 
@@ -56,20 +60,23 @@ class Info {
                                   RETURNING id, 
                                             info,
                                             skills,
-                                            about`,
+                                            about,
+                                            resumeLink`,
         [...values, id]);
 
       const {
         info,
         skills,
         about,
+        resumeLink,
       } = res.rows[0];
 
       return new Info(
         id,
         info,
         skills,
-        about
+        about,
+        resumeLink
       );
     } catch (err) {
       console.log(err);

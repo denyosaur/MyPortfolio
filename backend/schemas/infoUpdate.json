@@ -18,6 +18,12 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 600
+    },
+    "resumeLink": {
+      "description": "resume link",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
     }
   },
   "additionalProperties": false
