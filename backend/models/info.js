@@ -26,6 +26,7 @@ class Info {
         info,
         skills,
         about,
+        resumeLink,
       } = res.rows[0];
 
       return new Info(
@@ -33,7 +34,7 @@ class Info {
         info,
         skills,
         about,
-        resumeLink
+        resumeLink,
       );
     } catch (err) {
       console.log(err);

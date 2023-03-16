@@ -31,6 +31,7 @@ export const initialState = {
   info: {
     about: '',
     info: '',
+    resumeLink: '',
     skills: [],
   },
   pageView: 'Home',
@@ -109,6 +110,7 @@ const mainReducer = produce((draft, { payload, type }) => {
     }
     case FETCH_INFO_SUCCESS: {
       const { info } = payload;
+      console.log(info)
       Object.entries(info).forEach(([key, value]) => {
         const camelKey = snakeToCamel(key);
         if (camelKey in draft.info) draft.info[camelKey] = value;
