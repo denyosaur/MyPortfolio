@@ -6,7 +6,7 @@ import rootSaga from './Main/saga';
 
 const configureStore = () => {
   // const composeEnhancers = process.env.NODE_ENV !== 'production' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;
-  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
+  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const reducer = combineReducers({
     main: mainReducer,
   });
