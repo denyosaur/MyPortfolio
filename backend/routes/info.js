@@ -12,7 +12,7 @@ const infoUpdate = require("../schemas/infoUpdate.json");
 router.get("/", async function (req, res, next) {
   try {
     const info = await Info.getInfo(1);
-
+    console.log(info)
     return res.status(200).json({ info });
   } catch (error) {
     return next(error);
