@@ -23,9 +23,10 @@ export const TextContainer = styled.div`
   fadeOutLanding,
   theme: { fade },
 }) => fadeOutLanding ? css`${fade.out} 1s linear` : 'none'};
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: row;
   height: 5rem;
-  transition: visibility 2s linear;
+  transition: visibility 1s linear;
   visibility: ${({ fadeOutLanding }) => fadeOutLanding ? 'hidden' : 'visible'};
 `;
