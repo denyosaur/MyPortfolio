@@ -39,7 +39,7 @@ const Main = ({
         dispatchFetchInfo();
       }, 4000);
     } else if (infoRequestStatus === 'success') {
-      setFadeOutLanding(true)
+      setFadeOutLanding(true);
       setTimeout(() => {
         setLoadSuccess(true);
       }, 1000);
