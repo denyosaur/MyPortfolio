@@ -7,10 +7,10 @@ const HelperFunctions = require("../helper/helpers");
 class Info {
   constructor(id, info, skills, about, resumeLink) {
     this.id = id;
-    this.about = about;
     this.info = info;
-    this.resumeLink = resumeLink;
     this.skills = skills;
+    this.about = about;
+    this.resumeLink = resumeLink;
   }
 
   static async getInfo(id) {
@@ -28,7 +28,7 @@ class Info {
         about,
         resumeLink,
       } = res.rows[0];
-
+      console.log(resumeLink)
       return new Info(
         id,
         info,
