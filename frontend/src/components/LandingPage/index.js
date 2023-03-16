@@ -10,8 +10,8 @@ import {
 const LandingPage = ({ fadeOutLanding }) => (
   <LandingPageContainer>
     <TextContainer fadeOutLanding={fadeOutLanding}>
-    <StyledH1 isName>Daniel H Kim</StyledH1>
-    <StyledH1>Portfolio</StyledH1>
+      <StyledH1 isName>Daniel H Kim</StyledH1>
+      <StyledH1>Portfolio</StyledH1>
     </TextContainer>
   </LandingPageContainer>
 );
