@@ -18,17 +18,17 @@ class Info {
       const res = await db.query(`SELECT  id,
                                           info,
                                           skills,
-                                          about,
-                                          resumeLink
+                                          resume_link AS resumeLink,
+                                          about
                                   FROM info
                                   WHERE id = $1`, [id]);
       const {
         info,
         skills,
-        about,
         resumeLink,
+        about
       } = res.rows[0];
-      console.log(resumeLink)
+
       return new Info(
         id,
         info,
