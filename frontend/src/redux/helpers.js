@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = process.env.NODE_ENV === 'production' ? 'https://myportfolio-backend-ddyv.onrender.com' : 'http://localhost:3001';
+//const BASE_URL = 'https://myportfolio-backend-ddyv.onrender.com';
 
 export const request = async ({ subdirectory = "", token = "", method = "GET", data = {} }) => {
   try {
